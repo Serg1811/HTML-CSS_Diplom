@@ -3,7 +3,6 @@
     font-family: 'Open Sans';
     src: url(../fonts/OpenSans-Regular.ttf);
     font-weight: regular;
-    /* font-style: regular; */
   }
 
 @font-face {
@@ -11,7 +10,6 @@
     font-family: 'Open Sans';
     src: url(../fonts/OpenSans-Bold.ttf);
     font-weight: bold;
-    /* font-style: bold; */
   }
 
 body {
