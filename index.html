@@ -20,7 +20,7 @@
                 <div class="form-group">
                     <span class="form__text">Как часто вы заходите на сайт?</span>
                     <label class="select-group">
-                        <select class="input_field select">
+                        <select class="input_field select" name="attendance">
                             <option value="almost every day" selected>Почти каждый день</option>
                             <option value="every few days">Раз в несколько дней</option>
                             <option value="Every few weeks">Раз в несколько недель</option>
@@ -31,17 +31,17 @@
                 <div class="form-group">
                     <span class="form__text">Вы подписаны на e-mail рассылку?</span>
                     <label class="radio-group">
-                        <input type="radio" class="radio" name="radio-group">
+                        <input type="radio" class="radio" name="subscription" value="yes">
                         <span class="radio-group-text">Да</span>
                     </label>
                     <label class="radio-group">
-                        <input type="radio" class="radio" name="radio-group">
+                        <input type="radio" class="radio" name="subscription" value="no">
                         <span class="radio-group-text">Нет</span>
                     </label>
                 </div>
                 <div class="form-group">
                     <span class="form__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                    <textarea class="input_field input_recept" cols="30" rows="10" placeholder="Может, больше рецептов?"></textarea>
+                    <textarea class="input_field input_recept" cols="30" rows="10" placeholder="Может, больше рецептов?" name="content"></textarea>
                 </div>
                 <div class="form-group">
                     <button class="popup__send">отправить</button>
@@ -202,7 +202,7 @@
                     <form class="search__form">
                         <!-- <label class="search-label"></label>
                         <span class="search-hint">Не можете что-то найти? Используйте поиск!</span> -->
-                        <input class="input_field" placeholder="Найти..." required>
+                        <input class="input_field" name="search" placeholder="Найти..." required>
                         <button class="search__button"></button>
                     </form>
                 </div>
@@ -210,7 +210,7 @@
                     <form class="subscribe__form">
                         <!-- <label class="search-label"></label> -->
                         <span class="main__title side_bar__title">рассылка</span>
-                        <input class="input_field subscribe__address" type="email" placeholder="Ваш email-адрес" required>
+                        <input class="input_field subscribe__address" type="email" name="email" placeholder="Ваш email-адрес" required>
                         <button class="subscribe__button">Подписаться</button>
                     </form>
                 </div>
@@ -486,7 +486,7 @@
             </ul>
         </div>
         <div class="copyrights">
-            <span>Copyright © 2009–2019 City Blog LLC.</span>
+            <a href="#0" class="link copyrights__link">Copyright © 2009–2019 City Blog LLC.</a>
         </div>
     </footer>
 </body>
