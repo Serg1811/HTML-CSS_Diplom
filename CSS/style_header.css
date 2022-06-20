@@ -64,7 +64,7 @@
 
     .top-panel {
 
-        height: 450px;
+        min-height: 450px;
         background-image: url(../images/banner-bg.jpg);
         background-position: top;
     }
@@ -97,7 +97,7 @@
 
     .top-panel {
 
-        height: 392px;
+        min-height: 392px;
         background-image: url(../images/banner-bg-tablet.jpg);
         background-position: bottom;
     }
@@ -119,7 +119,7 @@
 
     .top-panel {
 
-        height: 392px;
+        min-height: 392px;
         background-image: url(../images/banner-mobile.jpg);
     }
 }
