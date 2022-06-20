@@ -113,17 +113,6 @@
         width: 156px;
         margin-left: 2px;
     }
-
-    .header__slogan {
-
-        font-size: 40px;
-        line-height: 55px;
-    }
-
-    .header__title {
-
-        width: 650px;
-    }
 }
 
 @media (max-width: 640px) {
@@ -133,11 +122,33 @@
         height: 392px;
         background-image: url(../images/banner-mobile.jpg);
     }
+}
+
+@media (min-width: 781px) and (max-width: 1199px) {
+
+    .header__title {
+
+        width: 650px;
+    }
 
     .header__slogan {
 
-        font-size: 7.03vw;
-        line-height: 1.64em;
+        font-size: 40px;
+        line-height: 55px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .header__title {
+
+        width: 83.2vw;
+    }
+
+        .header__slogan {
+
+        font-size: 5.12vw;
+        line-height: 1.375em;
     }
 }
 
