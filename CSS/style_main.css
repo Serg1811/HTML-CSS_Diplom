@@ -90,7 +90,10 @@ p {
 
     display: flex;
     position: relative;
+    box-sizing:border-box;
     background-color: #eff6f1;
+    padding: 15px 19px;
+    align-items: flex-end;
 }
 
 .trends__item:after {
@@ -103,11 +106,21 @@ p {
     top: 0;
     left: 0;
 }
+.trends-preview {
 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
 .main-tags {
 
     font-size: 14px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -160,17 +173,15 @@ p {
 .trends__content {
 
     box-sizing: border-box;
+    width: 100%;
     padding: 19px 30px 30px 30px;
     border: 3px solid rgba(181, 159, 91, 0.6);
 
     text-transform: uppercase;
     color: #ffffff;
 
-    position: absolute;
-    bottom: 15px;
-    left: 19px;
-    right: 19px;
     display: flex;
+
     flex-direction: column;
     z-index: 2;
 }
@@ -542,7 +553,8 @@ p {
     .trends__item {
 
         width: calc((100% - 16px)/4);
-        height: 320px;
+        min-height: 320px;
+        padding: 15px 21px;
     }
 
     .side_bar__title {
@@ -602,8 +614,6 @@ p {
 
     .trends__content {
 
-        left: 21px;
-        right: 21px;
         padding: 33px;
     }
 
@@ -645,7 +655,7 @@ p {
     .trends__item {
 
         width: calc((100% - 4px)/2);
-        height:247px;
+        min-height:247px;
     }
     
     .trends__item:nth-child(n+3) {
@@ -726,12 +736,19 @@ p {
     .trends__item {
 
         width: 100%;
-        height: calc(100% * 7/9);
+        min-height: calc(100% * 7/9);
     }
 
     .trends__item:nth-child(n+2) {
 
         margin-top: 4px;
+    }
+
+    .trends__avatar {
+
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom right;
     }
 
     .side_bar__title {
